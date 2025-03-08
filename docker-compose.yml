@@ -1,8 +1,15 @@
 services:
   mc:
-    image: itzg/minecraft-server
+    image: barber/mc-server
     environment:
       EULA: "true"
+      JAVA_VERSION: "jdk-17.0.12"
+      VERSION: "1.18.1"
+      OPS: |
+        kradons72
+      ICON: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcomediha.com%2Fproduit%2Fles-boys-le-spectacle%2F&psig=AOvVaw3iP7DYkt-1Dt9rEDn4Fnd9&ust=1741485949760000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNico_Oy-YsDFQAAAAAdAAAAABAE"
+      VIEW_DISTANCE: 16
+      ONLINE_MODE: false
     ports:
       - "25565:25565"
     volumes:
