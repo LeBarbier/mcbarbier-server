@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server
+    image: theonlybarber/barber-minecraft-server:latest
     environment:
       EULA: "true"
       JAVA_VERSION: "jdk-17.0.12"
