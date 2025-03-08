@@ -1,6 +1,6 @@
 services:
   mc:
-    image: barber/mc-server
+    image: itzg/minecraft-server
     environment:
       EULA: "true"
       JAVA_VERSION: "jdk-17.0.12"
